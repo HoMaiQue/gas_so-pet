@@ -1,0 +1,348 @@
+<aside
+                    className="sidebar sidebar-icons-right sidebar-icons-boxed sidebar-expand-lg"
+                    style={{ backgroundColor: "#3454a5" }}>
+                    <header className="sidebar-header">
+                        <a className="logo-icon" /*href="../index.html"*/>
+                            <img src="assets/img/sopet-logo.jpg" alt="logo icon" onClick={() => this.reloadPage()} />
+                        </a>
+                    </header>
+
+
+                    <nav className="sidebar-navigation" style={{ overflow: 'auto' }}>
+                        <ul className="menu">
+                            <li data-toggle="collapse" data-target="#products"
+                                // onClick={this.onChangeCurrent}
+                                //class="collapsed menu-item active"
+                                style={!this.state.isShowKinhDoanh ? { display: "none" } : {}}
+                                className={this.state.isMenuIndex === 20 ? "menu-item active" : "menu-item"}>                                    
+                                <Link onClick={() => this.setState({ isMenuIndex: 20 })}
+                                    className="menu-link ">
+                                    <i className="fa fa-suitcase" aria-hidden="true" ></i>
+                                    <span className="kinhdoanh"> {this.props.t("BUSINESS")} </span><i class="fa fa-plus"></i>
+                                </Link>
+                            </li>
+
+                            <div className={this.state.isMenuIndex === 3 || this.state.isMenuIndex === 5 || this.state.isMenuIndex === 7 || this.state.isMenuIndex=== 18 || this.state.isMenuIndex === 14 || this.state.isMenuIndex === 15 || this.state.isMenuIndex === 16 || this.state.isMenuIndex === 17 || this.state.isMenuIndex === 18 || this.state.isMenuIndex === 19 || this.state.isMenuIndex === 25 || this.state.isMenuIndex === 27 || this.state.isMenuIndex === 28 || this.state.isMenuIndex === 26 ? "sub-menu collapse" : "sub-menu collapse show"} id="products">
+
+                                <li style={!this.state.isShowMenu[9] ? { display: "none" } : {}}
+                                    className={this.state.isMenuIndex === 9 ? "menu-item active1" : "menu-item"}>
+                                    <Link onClick={() => this.setState({ isMenuIndex: 9 })} to='/manufacturer'
+                                        className="menu-link ">
+                                        <i className="fa fa-diamond" aria-hidden="true"></i>
+                                        <span className="title">{this.props.t(Constant.MANUFACTURER_TITLE)}</span>
+                                    </Link>
+                                </li>
+
+                                <li style={!this.state.isShowMenu[13] ? { display: "none" } : {}}
+                                    className={this.state.isMenuIndex === 13 ? "menu-item active1" : "menu-item"}>
+                                    <Link onClick={() => this.setState({ isMenuIndex: 13 })} to="/factory-child"
+                                        className="menu-link">
+                                        <i className="fa fa-building" aria-hidden="true"></i>
+                                        <span className="title">{this.props.t(Constant.FACTORY_CHILD)}</span>
+                                    </Link>
+                                </li>
+
+                                <li style={!this.state.isShowMenu[11] ? { display: "none" } : {}}
+                                    className={this.state.isMenuIndex === 11 ? "menu-item active1" : "menu-item"}>
+                                    <Link onClick={() => this.setState({ isMenuIndex: 11 })} to="/partner"
+                                        className="menu-link">
+                                        <i className="fa fa-handshake-o" aria-hidden="true"></i>
+                                        <span className="title">{this.props.t(Constant.PARTNER)}</span>
+                                    </Link>
+                                </li>
+
+                                <li style={!this.state.isShowRentalPartner ? { display: "none" } : {}}
+                                    className={this.state.isMenuIndex === 24 ? "menu-item active1" : "menu-item"}>
+                                    <Link onClick={() => this.setState({ isMenuIndex: 24 })} to="/rentPartner"
+                                        className="menu-link">
+                                        <i className="fa fa-handshake-o" aria-hidden="true"></i>
+                                        <span className="title">{this.props.t(Constant.RENTALPARTNER)}</span>
+                                    </Link>
+                                </li>
+
+                                <li style={!this.state.isShowMenu[12] ? { display: "none" } : {}}
+                                    className={this.state.isMenuIndex === 12 ? "menu-item active1" : "menu-item"}>
+                                    <Link onClick={() => this.setState({ isMenuIndex: 12 })} to="/fixer"
+                                        className="menu-link">
+                                        <i className="fa fa-cogs" aria-hidden="true"></i>
+                                        <span className="title">{this.props.t(Constant.FIX_TITLE)}</span>
+                                    </Link>
+                                </li>
+
+                                <li style={!this.state.isShowMenu[2] ? { display: "none" } : {}}
+                                    className={this.state.isMenuIndex === 1 ? "menu-item active1" : "menu-item"}>
+                                    <Link onClick={() => this.setState({ isMenuIndex: 1 })} to="/factory"
+                                        className="menu-link">
+                                        <i className="fa fa-user-plus" aria-hidden="true"></i>
+                                        <span className="title">{this.props.t(Constant.FACTORY_TITLE)}</span>
+                                    </Link>
+                                </li>
+                                {/*<li style={!this.state.isShowMenu[3] ? {display: "none"} : {}}*/}
+                                {/*    className={this.state.isMenuIndex === 7 ? "menu-item active" : "menu-item"}>*/}
+                                {/*    <Link onClick={() => this.setState({isMenuIndex: 7})} to="/station"*/}
+                                {/*          className="menu-link">*/}
+
+                                {/*        <span className="title">{Constant.STATION_TITLE}</span>*/}
+
+                                {/*    </Link>*/}
+                                {/*</li>*/}
+                                {/* Hide  menu GENERAL when Click menu VIEW_ORDER */}
+                                <li style={!this.state.isShowMenu[4] ||this.state.isMenuIndex===19 ? { display: "none" } : {}}
+                                    className={this.state.isMenuIndex === 2 ? "menu-item collapsed active" : "menu-item collapsed active"}
+                                    data-toggle="collapse" data-target="#sub-general">
+                                    <Link onClick={() => this.setState({ isMenuIndex: 2 })}
+                                        className="menu-link">
+                                        <i className="fa fa-users" aria-hidden="true"></i>
+                                        <div>
+                                            <span className="title">{this.props.t(Constant.GENERAL_TITLE)} </span>
+                                        </div>
+
+                                        <i className="fa fa-angle-down" style={{ fontSize: '20px' }} aria-hidden="true"></i>
+                                    </Link>
+                                </li>
+                                <div className="sub-menu collapse" id="sub-general">
+                                    <div className="duc">
+                                        <li className={this.state.isMenuIndex === 21 ? "menu-item active1" : "menu-item"}>
+                                            <Link onClick={() => this.setState({ isMenuIndex: 21 })} to="/distributionAgency"
+                                                className="menu-link">
+                                                <i className="fa fa-truck" aria-hidden="true"></i>
+                                                <span className="title"> {this.props.t("DISTRIBUTOR")} </span>
+                                            </Link>
+                                        </li>
+                                        <li className={this.state.isMenuIndex === 22 ? "menu-item active1" : "menu-item"}>
+                                            <Link onClick={() => this.setState({ isMenuIndex: 22 })} to="/industry"
+                                                className="menu-link">
+                                                <i className="fa fa-industry" aria-hidden="true"></i>
+                                                <span className="title"> {this.props.t("INDUSTRIAL")} </span>
+                                            </Link>
+                                        </li>
+                                        <li className={this.state.isMenuIndex === 23 ? "menu-item active1" : "menu-item"}>
+                                            <Link onClick={() => this.setState({ isMenuIndex: 23 })} to="/restaurant"
+                                                className="menu-link">
+                                                <i className="fa fa-cutlery" aria-hidden="true"></i>
+                                                <span className="title"> {this.props.t("RESTAURANT")} </span>
+                                            </Link>
+                                        </li>
+                                    </div>
+                                </div>
+
+
+                                {
+                                    // ***
+                                }
+                                <li style={!this.state.isShowMenu[5] ? { display: "none" } : {}}
+                                    className={this.state.isMenuIndex === 4 ? "menu-item active1" : "menu-item"}>
+                                    <Link onClick={() => this.setState({ isMenuIndex: 4 })} to="/agency"
+                                        className="menu-link ">
+                                        <i className="fa fa-cart-plus" aria-hidden="true"></i>
+                                        <span className="title">{this.props.t(Constant.AGENCY_TITLE)}</span>
+
+                                    </Link>
+                                </li>
+                            </div>
+                            
+                            <li style={!this.state.isShowMenu[6] ? { display: "none" } : {}}
+                                className={this.state.isMenuIndex === 3 ? "menu-item active" : "menu-item"}
+                                // id="sanpham" onClick={this.onChangeCurrent}
+                                value={1}
+                            >
+                                <Link onClick={() => this.setState({
+                                    isMenuIndex: 3,
+                                })} to='/product'
+                                    className="menu-link ">
+                                    <i className="fa fa-free-code-camp" aria-hidden="true"></i>
+                                    <span className="title">{this.props.t(Constant.PRODUCT_TITLE)}</span>
+
+                                </Link>
+                            </li>
+
+                            <li style={!this.state.isShowMenu[0] ? { display: "none" } : {}}
+                                className={this.state.isMenuIndex === 7 ? "menu-item active" : "menu-item"}>
+                                <Link onClick={() => this.setState({ isMenuIndex: 7 })} to="/dashboard"
+                                    className="menu-link">
+
+                                    <i className="fa fa-bar-chart" aria-hidden="true"></i>
+                                    <span className="title">{this.props.t(Constant.DASHBOARD_TITLE)}</span>
+
+                                </Link>
+                            </li>
+
+                            <li style={!this.state.isShowGoogleMap ? { display: "none" } : {}}
+                                className={this.state.isMenuIndex === 14 ? "menu-item active" : "menu-item"}>
+                                <Link onClick={() => this.setState({ isMenuIndex: 14 })} to="/googlemap"
+                                    className="menu-link">
+                                    <Icon type="global" className="fa" />
+                                    <span className="title">{this.props.t("MAP")}</span>
+                                </Link>
+                            </li>
+
+                            <li data-toggle="collapse" data-target="#menuOrder"
+                                //class="collapsed menu-item active"
+                                style={!this.state.isOrder ? { display: "none" } : {}}
+                                className={this.state.isMenuIndex === 28 ? "menu-item active" : "menu-item"}>
+                                <Link onClick={() => this.setState({ isMenuIndex: 28 })}
+                                    className="menu-link ">
+                                    <i className="fa fa-suitcase" aria-hidden="true" ></i>
+                                    <span className="kinhdoanh">{this.props.t("ORDER")}</span><i class="fa fa-plus"></i>
+                                </Link>
+
+                            </li>
+
+                            <div className={this.state.isMenuIndex === 3 || this.state.isMenuIndex === 5 || this.state.isMenuIndex === 7 || this.state.isMenuIndex === 9 || this.state.isMenuIndex === 12 || this.state.isMenuIndex === 13 ||this.state.isMenuIndex === 14 || this.state.isMenuIndex === 15 || this.state.isMenuIndex === 16 || this.state.isMenuIndex === 17 || this.state.isMenuIndex === 20 || this.state.isMenuIndex === 21  || this.state.isMenuIndex === 22 || this.state.isMenuIndex === 23 || this.state.isMenuIndex === 24 || this.state.isMenuIndex === 25 || this.state.isMenuIndex === 26 || this.state.isMenuIndex === 2 ? "sub-menu collapse" : "sub-menu collapse show"} id="menuOrder" style={{ backgroundColor: "#f0f2f3" }}>
+                                <li style={!this.state.isShowCreateOrder ? { display: "none" } : {}}
+                                    className={this.state.isMenuIndex === 18 ? "menu-item active" : "menu-item"} >
+                                    <Link onClick={() => this.setState({ isMenuIndex: 18 })} to="/createOrder"
+                                        className="menu-link" >
+
+
+                                        <Icon type="shopping-cart" className="fa" />
+                                        <span className="title" style={{ fontFamily: 'roboto', textTransform: 'capitalize' }}> {this.props.t("CREATE_ORDER")} </span>
+                                    </Link>
+
+                                </li>
+                                <li style={!this.state.isShowCreateOrder ? { display: "none" } : {}}
+                                    className={this.state.isMenuIndex === 27 ? "menu-item active" : "menu-item"} >
+                                    <Link onClick={() => this.setState({ isMenuIndex: 27 })} to="/menuCreateOrder"
+                                        className="menu-link" >
+
+
+                                        <i class="fa fa-bars"></i>
+                                        <span className="title" style={{ fontFamily: 'roboto', textTransform: 'capitalize' }}> {this.props.t("MENU_ORDER")} </span>
+                                    </Link>
+
+                                </li>
+
+                                <li style={!this.state.isShowCreateOrder ? { display: "none" } : {}}
+                                    className={this.state.isMenuIndex === 30 ? "menu-item active" : "menu-item"} >
+                                    <Link onClick={() => this.setState({ isMenuIndex: 30 })} to="/listReturn"
+                                        className="menu-link" >
+
+
+                                        <i class="fa fa-bars"></i>
+                                        <span className="title" style={{ fontFamily: 'roboto', textTransform: 'capitalize' }}>Danh Sách Hồi Lưu</span>
+                                    </Link>
+
+                                </li>
+
+                            </div>
+
+
+
+
+
+
+                            {/* <li style={!this.state.isShowMenu[1] ? { display: "none" } : {}}
+                                className={this.state.isMenuIndex === 6 ? "menu-item active" : "menu-item"}>
+                                <Link onClick={() => this.setState({ isMenuIndex: 6 })} to="/user"
+                                    className="menu-link">
+
+                                    <span className="title">{Constant.USER_TITLE}</span>
+
+                                </Link>
+                            </li> */}
+
+
+
+                            {/* <li style={!this.state.isShowMenu[8] ? { display: "none" } : {}}
+                                className={this.state.isMenuIndex === 8 ? "menu-item active" : "menu-item"}>
+                                <Link onClick={() => this.setState({ isMenuIndex: 8 })} to='/staff'
+                                    className="menu-link ">
+                                    <i className="fa fa-handshake-o" aria-hidden="true"></i>
+                                    <span className="title">{Constant.STAFF_TITLE}</span>
+
+                                </Link>
+                            </li> */}
+
+                            <li style={!this.state.isShowMenu[10] ? { display: "none" } : {}}
+                                className={this.state.isMenuIndex === 10 ? "menu-item active" : "menu-item"}>
+                                <Link onClick={() => this.setState({ isMenuIndex: 10 })} to='/customer'
+                                    className="menu-link ">
+                                    <i className="fa fa-address-book" aria-hidden="true"></i>
+                                    <span className="title">{Constant.CUSTOMER_TITLE}</span>
+
+                                </Link>
+                            </li>
+
+                            <li style={!this.state.isShowUpdateOrder ? { display: "none" } : {}}
+                                className={this.state.isMenuIndex === 19 ? "menu-item active" : "menu-item"}
+                            >
+                                <Link onClick={() => this.setState({ isMenuIndex: 19 })} to="/updateOrder"
+                                    className="menu-link" >
+
+                                    {/* <Icon type="thanh-tra" /> */}
+                                    <Icon type="shopping-cart" className="fa" />
+                                    <span style={{ fontFamily: 'roboto', textTransform: 'capitalize' }}>{this.props.t("VIEW_ORDER")} </span>
+                                </Link>
+
+                            </li>
+
+                            <li data-toggle="collapse" data-target="#manager" className="collapsed menu-item active"
+                                //style={!this.state.isShowMenu[20] ? { display: "none" } : {}} 
+                                // onClick={this.onChangeCurrent}
+                                className={this.state.isMenuIndex === 26 ? "menu-item active" : "menu-item"}>
+                                <Link onClick={() => this.setState({ isMenuIndex: 26 })}
+
+                                    className="menu-link "><i class="fa fa-archive"></i>
+                                    <span className="kinhdoanh"> {this.props.t("MANAGEMENT")} </span><i class="fa fa-plus"></i>
+                                </Link>
+                            </li>
+
+                            <div className={ this.state.isMenuIndex === 2 || this.state.isMenuIndex === 3  || this.state.isMenuIndex === 7 || this.state.isMenuIndex === 9 || this.state.isMenuIndex === 12 || this.state.isMenuIndex === 13 || this.state.isMenuIndex === 14 || this.state.isMenuIndex === 18 || this.state.isMenuIndex === 19 || this.state.isMenuIndex === 20 || this.state.isMenuIndex === 21 || this.state.isMenuIndex === 22 || this.state.isMenuIndex === 23 || this.state.isMenuIndex === 24 || this.state.isMenuIndex === 27 || this.state.isMenuIndex === 28  ? "sub-menu collapse" : "sub-menu collapse show" } id="manager" >
+
+                                <li style={!this.state.isShowDriver ? { display: "none" } : {}}
+                                    className={this.state.isMenuIndex === 15 ? "menu-item active1" : "menu-item"}>
+                                    <Link onClick={() => this.setState({ isMenuIndex: 15 })} to="/driver"
+                                        className="menu-link">
+                                        <i className="fa fa-id-card"></i>
+                                        <span className="title"> {this.props.t("DRIVER")} </span>
+                                    </Link>
+                                </li>
+
+                                <li style={!this.state.isShowCar ? { display: "none" } : {}}
+                                    className={this.state.isMenuIndex === 25 ? "menu-item active1" : "menu-item"}>
+                                    <Link onClick={() => this.setState({ isMenuIndex: 25 })} to="/car"
+                                        className="menu-link">
+                                        <Icon type="car" className="fa" />
+                                        <span className="title"> {this.props.t("CAR")} </span>
+                                    </Link>
+                                </li>
+
+                                <li style={!this.state.isShowThanhtra ? { display: "none" } : {}}
+                                    className={this.state.isMenuIndex === 16 ? "menu-item active1" : "menu-item"}
+                                >
+                                    <Link onClick={() => this.setState({ isMenuIndex: 16 })} to="/thanh-tra"
+                                        className="menu-link" >
+
+                                        {/* <Icon type="thanh-tra" /> */}
+                                        <i className="fa fa-bug" ></i>
+                                        <span className="title" style={{ fontFamily: 'roboto', textTransform: 'capitalize', color: "black" }}> {this.props.t("CHECK_MAINTAIN")} </span>
+                                    </Link>
+
+                                </li>
+                                <li style={!this.state.isShowCalender ? { display: "none" } : {}}
+                                    className={this.state.isMenuIndex === 17 ? "menu-item active1" : "menu-item"}>
+                                    <Link onClick={() => this.setState({ isMenuIndex: 17 })} to="/createCalenderInspector"
+                                        className="menu-link" >
+
+                                        {/* <Icon type="thanh-tra" /> */}
+                                        <Icon type="calendar" className="fa" />
+                                        <span className="title" style={{ fontFamily: 'roboto', textTransform: 'capitalize', color: "black" }}> {this.props.t("MAINTENANCE_SCHEDULE")} </span>
+                                    </Link>
+
+                                </li>
+
+                                <li style={!this.state.isShowMenu[7] ? { display: "none" } : {}}
+                                    className={this.state.isMenuIndex === 5 ? "menu-item active1" : "menu-item"}>
+                                    <Link onClick={() => this.setState({ isMenuIndex: 5 })} to='/report'
+                                        className="menu-link ">
+                                        <i className="fa fa-comments" aria-hidden="true"></i>
+                                        <span className="title">{this.props.t(Constant.REPORT_TITLE)}</span>
+
+                                    </Link>
+                                </li>
+
+                            </div>
+                        </ul>
+                    </nav>
+
+                </aside>

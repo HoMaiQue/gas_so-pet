@@ -1,0 +1,14 @@
+@media only screen and (max-device-width: 768px){
+    .flexbox{
+        display: inline-block;
+    }
+    .btn-success{
+        width: 100%;
+        margin-left: 0px!important;
+    }
+    .btn-create{
+        width: 100%;
+        margin-top: 5px;
+        margin-left: 0px!important;
+    }
+}

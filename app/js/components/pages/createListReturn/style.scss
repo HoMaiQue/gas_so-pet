@@ -1,0 +1,133 @@
+#print-content {
+	width: 100%;
+	padding: 2rem;
+	box-sizing: border-box;
+	font-size: 25px;
+}
+
+.print-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	height: 200px;
+	width: 200px;
+}
+
+.print-header .left,
+.right {
+	text-align: center;
+	margin: 0 3rem;
+}
+
+.print-header .center {
+	width: auto;
+}
+
+.header-content {
+	text-align: center;
+}
+.header-content > h1 {
+	font-size: 2rem;
+}
+
+h1,
+h2 {
+	text-align: center;
+}
+
+.print-address {
+	padding: 0 2rem;
+}
+
+.print-address > p {
+	display: flex;
+}
+
+.print-address > p > span {
+	width: 50%;
+}
+
+.print-address > h2 {
+	font-size: 2rem;
+}
+
+.main-content > h2 {
+	font-size: 2rem;
+}
+
+.line {
+	margin: 0 auto;
+	padding-top: 1rem;
+	border-bottom: 1px solid black;
+	width: 60%;
+}
+
+.list-item-render {
+	display: flex;
+	margin-bottom: 0.2rem;
+}
+
+.list-item-render > span {
+	width: 25%;
+	text-align: center;
+}
+
+.title-item-render {
+	display: flex;
+	justify-content: space-between;
+}
+
+.title-item-render > span {
+	width: 25%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.signature {
+	margin-top: 3rem;
+	text-align: right;
+}
+
+.signature > p {
+	display: flex;
+	justify-content: space-between;
+}
+
+.signature > p > span {
+	width: 40%;
+	text-align: center;
+}
+
+.title-signature {
+	font-weight: bold;
+}
+
+.signature-image {
+	margin-right: 3rem;
+}
+
+.checked-title {
+	text-align: center;
+	margin-top: 1.5rem;
+}
+
+.number-cylinder {
+	font-size: 20px;
+}
+
+.signature-image {
+	width: 200px;
+}
+div#print {
+	margin: 0px auto 0px auto;
+	overflow: hidden;
+}
+
+@media print {
+	div#print {
+		display: inline;
+	}
+}

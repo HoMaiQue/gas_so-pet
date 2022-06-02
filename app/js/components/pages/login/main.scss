@@ -1,0 +1,45 @@
+.main-login-container {
+	display: flex;
+	height: 100vh;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.main-logo-login {
+	width: 60%;
+	text-align: center;
+}
+
+.form-login {
+	width: 40%;
+}
+.language {
+	position: absolute;
+	background-color: white;
+	text-align: right;
+	top: 0px;
+	right: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+	.main-login-container {
+		display: flex;
+		height: 100vh;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.main-logo-login {
+		width: 100%;
+		text-align: center;
+	}
+
+	.main-logo-login > img {
+		margin: auto 0;
+		width: 70%;
+	}
+
+	.form-login {
+		width: 100%;
+	}
+}

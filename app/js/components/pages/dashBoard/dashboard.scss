@@ -1,0 +1,154 @@
+.recharts-default-legend {
+    display: flex;
+}
+#shoe-piechart{
+    width: 100%;
+    max-width: 100%;
+    position: fixed;
+}
+@media (min-width: 992px){
+    .showReport{
+        .modal-lg {
+            max-width: 101% !important;
+            margin-right: -15px;
+            margin-top: 0;
+        }
+    }
+    
+}
+.table-toplist{
+    tr.ant-table-row.ant-table-row-level-0 {
+        background: moccasin;
+    }
+    td {
+        font-weight: bold;
+    }
+}
+.Select-clear{
+    display: none;
+}
+
+@media only screen and (max-device-width: 425px){
+    button.btn.btn-warning {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    div#label {
+        padding-left: 6%!important;
+    }
+    div#label2  {
+        padding-left: 6%!important;
+    }
+    .react-datepicker__input-container{
+        padding-left: 10%;
+    }
+    .Select.is-clearable.is-searchable.Select--single{
+        width: 67%;
+    }
+    .export-excel{
+        padding-left: 0px!important;
+    }
+    .form-group{
+        margin-left: 0px!important;
+    }
+    .Select-control{
+        margin-left: 0px!important;
+    }
+    .table td, .table th{
+        padding: 7px!important;
+    }
+    .card.card-body{
+        height: auto!important;
+    }
+    p{
+        margin-top: 30px!important;
+        margin-bottom: 0px!important;;
+    }
+    .row{
+        margin-right: -5px!important;
+    }
+    .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto{
+        padding-right:0px!important;
+    }
+    .col-form-label{
+        width: 100%;
+    }
+    .fix-center{
+        text-align: center!important;
+    }
+}
+@media only screen and (max-device-width: 375px){
+    .Select.is-clearable.is-searchable.Select--single{
+        width: 79%;
+    }
+    .chart-dashboard.col-lg-12.row{
+        left: 0px!important;
+    }
+    .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto{
+        width: 98%!important;
+    }
+    .col-xs-12.col-lg-6{
+        padding-left: 15px!important;
+    }
+    svg:not(:root){
+        overflow: unset!important;
+    }
+}
+@media only screen and (max-device-width: 360px){
+    .Select.is-clearable.is-searchable.Select--single{
+        width: 84%;
+    }
+}
+@media only screen and (max-device-width: 320px){
+    .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto{
+        padding-left: 12px!important;
+    }
+    .table td, .table th{
+        padding: 0px !important;
+    }
+    .card-body{
+        padding: 0.25rem!important;
+    }
+    .Select.is-clearable.is-searchable.Select--single{
+        width: 81%;
+    }
+    li.recharts-legend-item.legend-item-0 {
+        margin-right:0px!important;
+    }
+    li.recharts-legend-item.legend-item-1 {
+        margin-right:0px!important;
+    }
+    li.recharts-legend-item.legend-item-2 {
+        margin-right:0px!important;
+    }
+    li.recharts-legend-item.legend-item-3 {
+        margin-right:0px!important;
+    }
+    li.recharts-legend-item.legend-item-4 {
+        margin-right:0px!important;
+    }
+    li.recharts-legend-item.legend-item-5 {
+        margin-right:0px!important;
+    }
+    li.recharts-legend-item.legend-item-6 {
+        margin-right:0px!important;
+    }
+    .Select-control {
+        margin-left: 9%!important;
+    }
+    div#label{
+        padding-left: 3%!important;
+    }
+    div#label2{
+        padding-left: 3%!important;
+    }
+    .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto{
+        padding-left: 10px!important;
+    }
+    .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto{
+        width: 107%!important;
+    }
+    .col-xs-12.col-lg-6{
+        padding-left: 10px!important;
+    }
+}

@@ -1,0 +1,125 @@
+.login{
+    padding-right: 0 !important;
+  }
+
+ .login h2{
+    text-align: center;
+  }
+
+ .login p{
+  margin: 0 10% 0 10%;
+  }  
+
+  .form-type-material{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  div.form-group.flexbox{
+    width: 80%;
+    margin-left: 4%;
+  }
+
+/* #mainContent div label{
+    margin-left: 20px !important;
+} */
+
+.ant-table-body{
+    overflow: auto;
+}
+
+.ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+    padding: 16px 16px;
+    word-break: unset !important; 
+}
+
+th.ant-table-column-has-actions.ant-table-column-has-filters div{
+    width: max-content;
+}
+.ant-table-bordered .ant-table-thead > tr > th, .ant-table-bordered .ant-table-tbody > tr > td {
+    text-align: center;
+    border-right: 1px solid #e8e8e8;
+}
+/*
+.cart-title .flexbox{
+    width: 100%;
+    display:block !important;
+}*/
+
+
+
+/*
+button.btn.btn-sm.btn-success {
+    margin-left: 5px !important; 
+}
+
+
+.modal-dialog .modal-content{
+    width: 100% !important;
+    right: 0px !important;
+}*/
+
+.w-20px {
+    width: 40px !important;
+}
+
+/*
+tr td div input{
+    width: 100% !important;
+}*/
+
+
+@media (max-width: 520px){
+    
+    /*
+    button.btn.btn-sm.btn-success, button.btn.btn-sm.btn-create {
+        margin-left: unset !important; 
+    }
+
+    .btn-success {
+        background-color: #15c377;
+        border-color: #15c377;
+        color: #fff;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .btn-create {
+        background-color: #ED383C;
+        color: #fff;
+        border-style: none;
+        width: 100%;
+    }
+
+    form.form-inline .form-group.mb-2{
+        width: 100% !important;
+    }
+    
+    .form-inline .form-group.mx-sm-3.mb-2{
+        width: 100% !important;
+    }
+
+    .form-inline .form-group {
+        margin-right: 0.5rem !important;
+    }
+
+    /*
+    .modal-dialog .modal-content{
+        width: 100% !important;
+        right: 0px !important;
+    }*/
+
+    .w-20px {
+        width: 40px !important;
+    }
+
+    /*
+    tr td div input{
+        width: 100% !important;
+    }*/
+
+    .table td, .table th {
+         padding: 0rem !important; 
+    }
+
+}

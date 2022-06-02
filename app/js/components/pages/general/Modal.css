@@ -1,0 +1,11 @@
+@import "~antd/dist/antd.css";
+
+.ant-popover.ant-popover-placement-top {
+    z-index: 1060;
+}
+
+@media (min-width: 1440px) {
+    .modal-lg {
+      max-width: 1200px;
+    }
+}

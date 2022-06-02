@@ -1,0 +1,149 @@
+.sidebar li a {
+	color: white !important;
+}
+li .fa {
+	color: white;
+}
+#manager li .fa {
+	color: black;
+}
+#manager .title {
+	color: black;
+}
+#manager {
+	background-color: #f0f2f3;
+}
+// li i:active {
+//     color: #3454a5;
+// }
+// li span:active {
+//     color: #3454a5;
+// }
+
+.menu-item:active {
+	background-color: #1e429b;
+}
+
+.active i {
+	color: #3454a5 !important;
+}
+.sidebar .menu:not(.menu-bordery) > .menu-item.active > .menu-link {
+	// background: #fff;
+	// border-left: 5px solid #ec5353;
+	color: #3454a5 !important;
+	text-decoration: none;
+}
+.sidebar .menu:not(.menu-bordery) > .menu-item.active > .menu-link {
+	background: #fff;
+	border-left: 5px solid #ed383c;
+	// color: #3454a5!important;
+}
+.sidebar .menu:not(.menu-bordery) > .menu-item.active > .menu-link {
+	background: #edf1f5;
+	border-left: 5px solid #ed383c;
+	border-right: 5px solid #ed383c;
+}
+.fa-suitcase {
+	// background-color: white;
+	color: white;
+}
+
+.kinhdoanh {
+	font-size: 14px;
+	font-family: "roboto";
+	text-transform: capitalize;
+	margin-left: 8px;
+	text-decoration: none;
+}
+.sub-menu {
+	list-style-type: none;
+	// background-color: #edf1f5;
+	text-decoration: none;
+}
+.collapsed a {
+	width: 200%;
+	text-decoration: none;
+}
+#products {
+	background-color: #f0f2f3;
+}
+.sub-menu .menu-link .fa {
+	color: black;
+}
+.sub-menu .menu-link .title {
+	color: black;
+}
+
+.active1 i {
+	color: #3454a5 !important;
+	text-decoration: none;
+}
+.active1 .title {
+	color: #3454a5 !important;
+	text-decoration: none;
+}
+
+.active1 .menu-link {
+	background-color: #d4dfe4;
+	text-decoration: none;
+}
+.menu-item {
+	border-bottom: 0.01px solid rgba(255, 255, 255, 0.466);
+}
+.sub-menu .menu-item {
+	border-bottom: 0.01px solid rgba(27, 26, 26, 0.185);
+	border-right: 0.01px solid rgba(27, 26, 26, 0.185);
+}
+
+.fs-16 {
+	color: #3454a5;
+}
+
+#menuOrder .title {
+	color: black;
+	text-decoration: none;
+}
+.active .title {
+	color: #3454a5 !important;
+	text-decoration: none;
+}
+
+#sub-general {
+	background-color: rgba(92, 88, 88, 0.089);
+	margin: 0 auto;
+}
+#sub-general .menu-link i {
+	margin-left: 22px;
+}
+
+.nav-item {
+	cursor: pointer;
+}
+
+.sub-menu .menu-item .menu-link i {
+	width: 14px;
+}
+// Set độ rộng tất cả các icon
+
+.sub-menu .menu-item .menu-link {
+	padding: 0px 22px;
+}
+
+@media only screen and (max-width: 767px) {
+	.logo-icon {
+		display: block !important;
+		width: 3rem;
+		padding-right: 0;
+	}
+	.logo-icon > img {
+		width: 100%;
+		object-fit: cover;
+	}
+	.iconMenu {
+		width: 30px !important;
+	}
+	// resize google map
+	.map {
+		left: 0 !important;
+	}
+}

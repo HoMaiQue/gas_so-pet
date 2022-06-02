@@ -1,0 +1,23 @@
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+input {
+	border: 1px solid gray;
+	border-radius: 2px;
+	height: 2rem;
+	outline: none;
+	padding-left: 10px;
+}
+
+input:focus {
+	outline: none;
+	border: 1px solid gray;
+	box-shadow: 0 0 2px gray;
+}
+
+button {
+	height: 2rem;
+}

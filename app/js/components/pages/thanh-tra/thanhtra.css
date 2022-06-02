@@ -1,0 +1,5 @@
+@media only screen and (max-device-width: 320px){
+    .card-title{
+        padding: 20px!important;
+    }
+}

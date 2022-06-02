@@ -1,0 +1,23 @@
+@media only screen and (max-device-width: 425px){
+    .form-inline .form-group{
+        margin-right: 0px!important;
+        width: 100%;
+    }
+    .btn-primary{
+        width: 100%;
+    }
+    .flexbox > *{
+        margin-left: 0;
+        margin-right: -5px;
+    }
+    .modal-content{
+        width: 100%!important;
+        right: 0px!important;
+    }
+    .table .table{
+        width: 1000px;
+    }
+    .modal-body{
+        overflow:scroll;
+    }
+}

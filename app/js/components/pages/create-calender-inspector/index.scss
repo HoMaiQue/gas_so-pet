@@ -1,0 +1,24 @@
+.card-title{
+    margin-bottom: 0;
+    padding: 15px 54px;
+    border-bottom: 1px solid rgba(77, 82, 89, 0.07);
+}
+
+.login-form-button{
+    border: none;
+}
+@media only screen and (max-device-width: 425px){
+
+    .ant-col-xs-14{
+        width: 100%;
+        display: contents;
+    }
+    span.ant-calendar-picker{
+        width: 100%!important;
+    }
+}
+
+
+.ant-table-column-has-actions{
+    text-align: center!important;
+}
